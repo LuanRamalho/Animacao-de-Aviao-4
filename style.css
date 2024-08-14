@@ -1,0 +1,85 @@
+ *{
+	 margin: 0;
+	 padding: 0;
+ }
+
+ body{
+	 background:#b6d7ff;
+ }
+
+ .hills{
+	 background-image: url("hills.png");
+	 width:100%;
+	 height:309px;
+	 position: absolute;
+	 bottom: 0;
+	 animation-name:hillsMove;
+	 animation-duration: 30s;
+	 animation-iteration-count:infinite;
+
+ }
+
+ .sun{
+	position: absolute;
+    top: 12%;
+    left: 5%;
+	animation-name:sunMove;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+ }
+
+ .plane{
+	position: absolute;
+    left: 40%;
+    top: 15%;
+	animation-name:planeMove;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+ }
+
+ /*=========hills animation==============*/
+
+ @keyframes hillsMove{
+	 0%{
+		background-position-x: 0;
+	 }
+
+	 100%{
+		background-position-x: -3000px;
+	 }
+ }
+
+
+ /*==========sun animation============*/
+ @keyframes sunMove{
+	 0%{
+		 transform: rotate(0);
+	 }
+
+	 100%{
+		 transform: rotate(360deg);
+	 }
+ }
+
+ /*==========plane animation================*/
+
+ @keyframes planeMove{
+	 0%{
+		top: 15%;
+	 }
+
+	 30%{
+		top: 5%;
+	 }
+
+	 60%{
+		top: 20%;
+	}
+
+	100%{
+		top: 15%
+	}
+	 
+ }
